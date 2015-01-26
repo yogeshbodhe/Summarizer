@@ -1,0 +1,78 @@
+[System]
+Name='Untitled'
+Type='mamdani'
+Version=2.0
+NumInputs=7
+NumOutputs=1
+NumRules=0
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Title'
+Range=[0 30]
+NumMFs=3
+MF1='Low':'trimf',[0 5 10]
+MF2='Medium':'trimf',[10 15 20]
+MF3='High':'trimf',[20 25 30]
+
+[Input2]
+Name='length'
+Range=[0 30]
+NumMFs=3
+MF1='Low':'trimf',[0 5 10]
+MF2='Medium':'trimf',[10 15 20]
+MF3='High':'trimf',[20 25 30]
+
+[Input3]
+Name='weight'
+Range=[0 30]
+NumMFs=3
+MF1='Low':'trimf',[0 5 10]
+MF2='Medium':'trimf',[10 15 20]
+MF3='High':'trimf',[20 25 30]
+
+[Input4]
+Name='position'
+Range=[0 30]
+NumMFs=3
+MF1='Low':'trimf',[0 5 10]
+MF2='Medium':'trimf',[10 15 20]
+MF3='High':'trimf',[20 25 30]
+
+[Input5]
+Name='Similarity'
+Range=[0 30]
+NumMFs=3
+MF1='Low':'trimf',[0 5 10]
+MF2='Medium':'trimf',[10 15 20]
+MF3='High':'trimf',[20 25 30]
+
+[Input6]
+Name='Noun'
+Range=[0 30]
+NumMFs=3
+MF1='Low':'trimf',[0 5 10]
+MF2='Medium':'trimf',[10 15 20]
+MF3='High':'trimf',[20 25 30]
+
+[Input7]
+Name='Data'
+Range=[0 30]
+NumMFs=3
+MF1='Low':'trimf',[0 5 10]
+MF2='Medium':'trimf',[10 15 20]
+MF3='High':'trimf',[20 25 30]
+
+[Output1]
+Name='Final'
+Range=[0 30]
+NumMFs=3
+MF1='Unimportant':'trimf',[0 5 10]
+MF2='Average':'trimf',[10 15 20]
+MF3='Important':'trimf',[20 25 30]
+
+[Rules]
